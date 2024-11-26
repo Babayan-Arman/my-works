@@ -1,0 +1,8 @@
+﻿  Source.cpp
+C:\Users\arman\source\repos\diskret mat kursayin\diskret mat kursayin\Source.cpp(300,21): warning C4244: 'initializing': conversion from 'double' to 'int', possible loss of data
+C:\Users\arman\source\repos\diskret mat kursayin\diskret mat kursayin\Source.cpp(479,17): warning C4244: '=': conversion from 'double' to 'int', possible loss of data
+C:\Users\arman\source\repos\diskret mat kursayin\diskret mat kursayin\Source.cpp(519,29): warning C4244: 'initializing': conversion from 'double' to 'unsigned int', possible loss of data
+C:\Users\arman\source\repos\diskret mat kursayin\diskret mat kursayin\Source.cpp(747,23): warning C4244: 'initializing': conversion from 'double' to 'unsigned int', possible loss of data
+C:\Users\arman\source\repos\diskret mat kursayin\diskret mat kursayin\Source.cpp(1392,21): warning C4244: 'initializing': conversion from 'double' to 'int', possible loss of data
+C:\Users\arman\source\repos\diskret mat kursayin\diskret mat kursayin\Source.cpp(766,12): warning C4101: 'j': unreferenced local variable
+  diskret mat kursayin.vcxproj -> C:\Users\arman\source\repos\diskret mat kursayin\Debug\diskret mat kursayin.exe
