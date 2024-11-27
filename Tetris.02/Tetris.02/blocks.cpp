@@ -938,11 +938,8 @@ void playing_field::delete_reserve()
 		}
 	}
 }
-void playing_field::change_reserve(int row[], int column[])  //stex avelanem amen figuri tvery zapasi hamar
+void playing_field::change_reserve(int row[], int column[],int first_row, int first_column)  
 {
-				//{1,1,1,1,1,1,0,0 }
-				//{4,5,6,7,8,9,6,7 }
-	
 	int high, lenght;
 	if (reserve_empty)
 	{
@@ -951,14 +948,14 @@ void playing_field::change_reserve(int row[], int column[])  //stex avelanem ame
 			reserve_row[i] = row[i];
 			reserve_column[i] = column[i];
 		}
-		high = reserve_row[0] - 2;
-		lenght = 28 - reserve_column[0] + 5; //tver@ amen figur irany kunena vor sirun lini
+		high = reserve_row[0] - first_row;
+		lenght = 28 - reserve_column[0] + first_column; 
 		for (int i = 0; i < 8; i += 1)
 		{
 			row[i] -= high;  
 			column[i] += lenght;
 		}
-		cout << endl;
+	/*	cout << endl;
 		cout << "{";
 		for (int i = 0; i < 8; i += 1)
 		{
@@ -980,6 +977,8 @@ void playing_field::change_reserve(int row[], int column[])  //stex avelanem ame
 			cout  << column[i] << ",";
 		}
 		cout << "}" << endl;
+		cout << "1 high = " << high << "\t" << "1 lenght = " << lenght << endl;*/
+
 		delete_space(reserve_row, reserve_column);
 		for (int i = 0; i < 8; i+=2)
 		{
@@ -1002,32 +1001,32 @@ void playing_field::change_reserve(int row[], int column[])  //stex avelanem ame
 			reserve_column[i] = column[i];
 			column[i] = k;
 		}
-		high = reserve_row[0] - 1;
-		lenght = 28 - reserve_column[0] + 8;
-		
-		cout << endl;
-		cout << "[";
-		for (int i = 0; i < 8; i += 1)
-		{
-			cout << reserve_row[i] << ",";
-		}
-		cout << "]" << endl << "[";
-		for (int i = 0; i < 8; i += 1)
-		{
-			cout << reserve_column[i] << ",";
-		}
-		cout << "]" << endl << "[";
-		for (int i = 0; i < 8; i += 1)
-		{
-			cout << row[i] << ",";
-		}
-		cout << "]" << endl << "[";
-		for (int i = 0; i < 8; i += 1)
-		{
-			cout << column[i] << ",";
-		}
-		cout << "]" << endl;
-
+		high = reserve_row[0] - first_row;
+		lenght = 28 - reserve_column[0] + first_column;
+		//
+		//cout << endl;
+		//cout << "[";
+		//for (int i = 0; i < 8; i += 1)
+		//{
+		//	cout << reserve_row[i] << ",";
+		//}
+		//cout << "]" << endl << "[";
+		//for (int i = 0; i < 8; i += 1)
+		//{
+		//	cout << reserve_column[i] << ",";
+		//}
+		//cout << "]" << endl << "[";
+		//for (int i = 0; i < 8; i += 1)
+		//{
+		//	cout << row[i] << ",";
+		//}
+		//cout << "]" << endl << "[";
+		//for (int i = 0; i < 8; i += 1)
+		//{
+		//	cout << column[i] << ",";
+		//}
+		//cout << "]" << endl;
+		//cout << "2 high = " << high << "\t" << " 2 lenght = " << lenght << endl;
 		/*for (int i = 0; i < 8; i += 1)
 		{
 			row[i] -= high;
@@ -1038,23 +1037,20 @@ void playing_field::change_reserve(int row[], int column[])  //stex avelanem ame
 			queue[reserve_row[i]- high][reserve_column[i]+lenght] = '[';
 			queue[reserve_row[i + 1]-high][reserve_column[i + 1]+lenght] = ']';
 		}
-		cout  << endl << "[";
-		for (int i = 0; i < 8; i += 1)
-		{
-			cout << row[i] << ",";
-		}
-		cout << "]" << endl << "[";
-		for (int i = 0; i < 8; i += 1)
-		{
-			cout << column[i] << ",";
-		}
-		cout << "]" << endl;
+		//cout  << endl << "[";
+		//for (int i = 0; i < 8; i += 1)
+		//{
+		//	cout << row[i] << ",";
+		//}
+		//cout << "]" << endl << "[";
+		//for (int i = 0; i < 8; i += 1)
+		//{
+		//	cout << column[i] << ",";
+		//}
+		//cout << "]" << endl;
 	
 	}
-	for (int i = 0; i < 8; i++)
-	{
-		
-	}
+	
 }
 
 //blocks::blocks() {}
@@ -1076,7 +1072,7 @@ I_shape::I_shape(playing_field& field)
 	rotate_Horizontally = false;
 	rotate_Vertically = false;
 	field.change_field(row_position, column_position);
-}
+} 
 bool I_shape::action_down(playing_field& field)
 {
 	if (!field.valid_down(row_position, column_position)) return false;
@@ -1747,7 +1743,12 @@ void I_shape::hard_drop(playing_field& field)
 }
 void I_shape::reserve(playing_field& field)
 {
-	field.change_reserve(row_position, column_position);
+	int first_row, first_column;
+	if((rotate_Horizontally && rotate_Vertically) || (!rotate_Horizontally && !rotate_Vertically))
+		first_row = 2, first_column = 5;
+	else if ((!rotate_Horizontally && rotate_Vertically) || (rotate_Horizontally && !rotate_Vertically))
+		first_row = 1, first_column = 8;
+	field.change_reserve(row_position, column_position,first_row,first_column);
 }
 I_shape::~I_shape() { /*cout << "\n\n I des\n\n";*/ }
 
@@ -2452,7 +2453,19 @@ void T_shape::hard_drop(playing_field& field)
 }
 void T_shape::reserve(playing_field& field)
 {
-	field.change_reserve(row_position, column_position);
+	int first_row, first_column;
+	//cout <<endl << rotate_Horizontally << "\t" << rotate_Vertically << endl;
+	if (rotate_Horizontally && rotate_Vertically)
+		first_row = 2, first_column = 6;
+	else if (!rotate_Horizontally && rotate_Vertically)
+		first_row = 2, first_column = 7;
+	else if  (rotate_Horizontally && !rotate_Vertically)
+		first_row = 2, first_column = 9;
+	else if (!rotate_Horizontally && !rotate_Vertically)
+		first_row =3, first_column = 6;
+
+
+	field.change_reserve(row_position, column_position, first_row, first_column);
 }
 T_shape::~T_shape() { /*cout << "\n\n T des\n\n";*/ }
 
@@ -3132,7 +3145,18 @@ void L_shape::hard_drop(playing_field& field)
 }
 void L_shape::reserve(playing_field& field)
 {
-	field.change_reserve(row_position, column_position);
+	int first_row, first_column;
+//	cout << endl << rotate_Horizontally << "\t" << rotate_Vertically << endl;
+	if ((rotate_Horizontally && rotate_Vertically) || (!rotate_Horizontally && !rotate_Vertically))
+		first_row = 2, first_column = 6;
+	else if (!rotate_Horizontally && rotate_Vertically)
+		first_row = 2, first_column = 7;
+	else if (rotate_Horizontally && !rotate_Vertically)
+		first_row = 2, first_column = 9;
+	
+
+
+	field.change_reserve(row_position, column_position, first_row, first_column);
 }
 L_shape::~L_shape() { /*cout << "\n\n L des\n\n";*/ }
 
@@ -3805,9 +3829,19 @@ void J_shape::hard_drop(playing_field& field)
 }
 void J_shape::reserve(playing_field& field)
 {
-	field.change_reserve(row_position, column_position);
+	int first_row, first_column;
+//	cout << endl << rotate_Horizontally << "\t" << rotate_Vertically << endl;
+	if (rotate_Horizontally && rotate_Vertically)
+		first_row = 2, first_column = 6;
+	else if ((!rotate_Horizontally && rotate_Vertically) || (rotate_Horizontally && !rotate_Vertically))
+		first_row = 2, first_column = 7;
+	else if (!rotate_Horizontally && !rotate_Vertically)
+		first_row = 2, first_column = 10;
+
+
+	field.change_reserve(row_position, column_position, first_row, first_column);
 }
-J_shape::~J_shape() { /*cout << "\n\n J des\n\n";*/ }
+J_shape::~J_shape() {/* cout << "\n\n J des\n\n"; */}
 
 O_shape::O_shape(playing_field& field)
 {
@@ -3874,9 +3908,9 @@ void O_shape::hard_drop(playing_field& field)
 }
 void O_shape::reserve(playing_field& field)
 {
-	field.change_reserve(row_position, column_position);
+	field.change_reserve(row_position, column_position,2,7);
 }
-O_shape::~O_shape() {/* cout << "\n\n O des\n\n";*/ }
+O_shape::~O_shape() { /*cout << "\n\n O des\n\n";*/ }
 
 Z_shape::Z_shape(playing_field& field)
 {
@@ -4541,9 +4575,18 @@ void Z_shape::hard_drop(playing_field& field)
 }
 void Z_shape::reserve(playing_field& field)
 {
-	field.change_reserve(row_position, column_position);
+	int first_row, first_column;
+//	cout << endl << rotate_Horizontally << "\t" << rotate_Vertically << endl;
+	if ((rotate_Horizontally && rotate_Vertically) || (!rotate_Horizontally && !rotate_Vertically))
+		first_row = 2, first_column = 6;
+	else if ((rotate_Horizontally && !rotate_Vertically) || (!rotate_Horizontally && rotate_Vertically))
+		first_row = 2, first_column = 9;
+
+
+
+	field.change_reserve(row_position, column_position, first_row, first_column);
 }
-Z_shape::~Z_shape() { /*cout << "\n\n Z des\n\n";*/ }
+Z_shape::~Z_shape() {/* cout << "\n\n Z des\n\n";*/ }
 
 S_shape::S_shape(playing_field& field)
 {
@@ -5210,7 +5253,16 @@ void S_shape::hard_drop(playing_field& field)
 }
 void S_shape::reserve(playing_field& field)
 {
-	field.change_reserve(row_position, column_position);
+	int first_row, first_column;
+//	cout << endl << rotate_Horizontally << "\t" << rotate_Vertically << endl;
+	if ((rotate_Horizontally && rotate_Vertically) || (!rotate_Horizontally && !rotate_Vertically))
+		first_row = 2, first_column = 8;
+	else if ((rotate_Horizontally && !rotate_Vertically) || (!rotate_Horizontally && rotate_Vertically))
+		first_row = 2, first_column = 7;
+
+
+
+	field.change_reserve(row_position, column_position, first_row, first_column);
 }
-S_shape::~S_shape() { /*cout << "\n\n S des\n\n";*/ }
+S_shape::~S_shape() { /*cout << "\n\n S des\n\n"; */}
 

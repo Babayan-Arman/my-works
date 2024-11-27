@@ -181,7 +181,7 @@ public:
 	void points();
 	void change_queue(int& n2, int& n3);
 	void delete_queue();
-	void change_reserve(int row[], int column[]);
+	void change_reserve(int row[], int column[],int first_row, int first_column);
 	void delete_reserve();
 	int get_player_points();
 	//void reserve(int row[], int column[]);
