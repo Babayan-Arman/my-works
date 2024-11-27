@@ -11,15 +11,20 @@ using namespace std;
 
 void periodic(int &new_time,int & levels_point)
 {
-	int milliseconds = 505;
-	int next_level = 1000, multiplier = 2;
+	int milliseconds = 600;
+	int next_level = 1000, multiplier = 1;
 	while (true)
 	{
 		if (levels_point > multiplier * next_level)
 		{
-			if (!(milliseconds == 100))
+			if (milliseconds >= 100)
 			{
 				milliseconds -= 50;
+				multiplier++;
+			}
+			else if (milliseconds >=20)
+			{
+				milliseconds -= 10;
 				multiplier++;
 			}
 		}
@@ -39,8 +44,10 @@ int main()
 	bool new_block;
 	bool input = false;
 	char go = NULL;
-	int n1, n2 = rand() % 7 , n3 = rand() % 7;
+	int n1, n2 = (rand() % 14)%7 , n3 = (rand() % 14) % 7, n_reserve=-1;
 	thread t(periodic, ref(next_time),ref(levels_point));
+	
+	
 	while (!game_over)
 	{
 		
@@ -50,7 +57,7 @@ int main()
 		n1 = n2;
 		n2 = n3;
 		n3 = rand() % 7;
-	//	n1 = 0;
+	
 		switch (n1)
 		{
 		case 0:
@@ -101,9 +108,10 @@ int main()
 	
 		x.change_queue(n2, n3);
 		x.print_field(); 
-		
+		//n_reserve = -1;
 		while (new_block)
 		{
+			
 			levels_point = x.get_player_points();
 			if (next_time / 2 > prev_time)
 			{
@@ -149,8 +157,115 @@ int main()
 			}
 			case 'o':
 			{
-				p->reserve(x);
-				new_block = false;
+				if (n_reserve == -1)
+				{
+					p->reserve(x);
+					new_block = false;
+				}
+				else
+				{
+					p->reserve(x);
+					switch (n_reserve)
+					{
+					case 0:
+					{
+						I_shape I(x);
+						p = &I;
+						break;
+					}
+					case 1:
+					{
+						T_shape T(x);
+						p = &T;
+						break;
+					}
+					case 2:
+					{
+						L_shape L(x);
+						p = &L;
+						break;
+					}
+					case 3:
+					{
+						J_shape J(x);
+						p = &J;
+						break;
+					}
+					case 4:
+					{
+						O_shape O(x);
+						p = &O;
+						break;
+					}
+					case 5:
+					{
+						Z_shape Z(x);
+						p = &Z;
+						break;
+					}
+					case 6:
+					{
+						S_shape S(x);
+						p = &S;
+						break;
+					}
+					default:
+						break;
+					}
+
+					while (new_block)
+					{
+
+						levels_point = x.get_player_points();
+						if (next_time / 2 > prev_time)
+						{
+							prev_time = next_time / 2;
+							if (!(p->action_down(x))) new_block = false;
+						}
+						if (_kbhit())
+						{
+							go = _getch();
+						}
+						switch (tolower(go))
+						{
+						case 's':
+						{
+							if (!(p->action_down(x))) new_block = false;
+							break;
+						}
+						case 'a':
+						{
+							p->action_left(x);
+							break;
+						}
+						case 'd':
+						{
+							p->action_right(x);
+							break;
+						}
+						case 'l':
+						{
+							p->rotate_right(x);
+							break;
+						}
+						case 'k':
+						{
+							p->rotate_left(x);
+							break;
+						}
+						case 'w':
+						{
+							p->hard_drop(x);
+							new_block = false;
+							break;
+						}
+						default:
+							break;
+						}
+						go = NULL;
+					}
+				}
+				n_reserve = n1;
 				break;
 			}
 			default:
