@@ -1,0 +1,181 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\arman\\source\\repos\\Ping_pong\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{0C45DAFF-4FAC-4743-A180-87106D17A3B9}|Ping_pong\\Ping_pong.vcxproj|C:\\Users\\arman\\source\\repos\\Ping_pong\\Ping_pong\\main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{0C45DAFF-4FAC-4743-A180-87106D17A3B9}|Ping_pong\\Ping_pong.vcxproj|solutionrelative:Ping_pong\\main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0C45DAFF-4FAC-4743-A180-87106D17A3B9}|Ping_pong\\Ping_pong.vcxproj|C:\\Users\\arman\\source\\repos\\Ping_pong\\Ping_pong\\ball.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{0C45DAFF-4FAC-4743-A180-87106D17A3B9}|Ping_pong\\Ping_pong.vcxproj|solutionrelative:Ping_pong\\ball.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0C45DAFF-4FAC-4743-A180-87106D17A3B9}|Ping_pong\\Ping_pong.vcxproj|C:\\Users\\arman\\source\\repos\\Ping_pong\\Ping_pong\\map.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{0C45DAFF-4FAC-4743-A180-87106D17A3B9}|Ping_pong\\Ping_pong.vcxproj|solutionrelative:Ping_pong\\map.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0C45DAFF-4FAC-4743-A180-87106D17A3B9}|Ping_pong\\Ping_pong.vcxproj|C:\\Users\\arman\\source\\repos\\Ping_pong\\Ping_pong\\time.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{0C45DAFF-4FAC-4743-A180-87106D17A3B9}|Ping_pong\\Ping_pong.vcxproj|solutionrelative:Ping_pong\\time.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0C45DAFF-4FAC-4743-A180-87106D17A3B9}|Ping_pong\\Ping_pong.vcxproj|C:\\Users\\arman\\source\\repos\\Ping_pong\\Ping_pong\\platforms.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{0C45DAFF-4FAC-4743-A180-87106D17A3B9}|Ping_pong\\Ping_pong.vcxproj|solutionrelative:Ping_pong\\platforms.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0C45DAFF-4FAC-4743-A180-87106D17A3B9}|Ping_pong\\Ping_pong.vcxproj|C:\\Users\\arman\\source\\repos\\Ping_pong\\Ping_pong\\time.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{0C45DAFF-4FAC-4743-A180-87106D17A3B9}|Ping_pong\\Ping_pong.vcxproj|solutionrelative:Ping_pong\\time.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0C45DAFF-4FAC-4743-A180-87106D17A3B9}|Ping_pong\\Ping_pong.vcxproj|C:\\Users\\arman\\source\\repos\\Ping_pong\\Ping_pong\\platforms.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{0C45DAFF-4FAC-4743-A180-87106D17A3B9}|Ping_pong\\Ping_pong.vcxproj|solutionrelative:Ping_pong\\platforms.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0C45DAFF-4FAC-4743-A180-87106D17A3B9}|Ping_pong\\Ping_pong.vcxproj|C:\\Users\\arman\\source\\repos\\Ping_pong\\Ping_pong\\map.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{0C45DAFF-4FAC-4743-A180-87106D17A3B9}|Ping_pong\\Ping_pong.vcxproj|solutionrelative:Ping_pong\\map.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0C45DAFF-4FAC-4743-A180-87106D17A3B9}|Ping_pong\\Ping_pong.vcxproj|C:\\Users\\arman\\source\\repos\\Ping_pong\\Ping_pong\\ball.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{0C45DAFF-4FAC-4743-A180-87106D17A3B9}|Ping_pong\\Ping_pong.vcxproj|solutionrelative:Ping_pong\\ball.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0C45DAFF-4FAC-4743-A180-87106D17A3B9}|Ping_pong\\Ping_pong.vcxproj|C:\\Users\\arman\\source\\repos\\Ping_pong\\Ping_pong\\headers_package.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{0C45DAFF-4FAC-4743-A180-87106D17A3B9}|Ping_pong\\Ping_pong.vcxproj|solutionrelative:Ping_pong\\headers_package.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 198,
+          "SelectedChildIndex": 4,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "time.cpp",
+              "DocumentMoniker": "C:\\Users\\arman\\source\\repos\\Ping_pong\\Ping_pong\\time.cpp",
+              "RelativeDocumentMoniker": "Ping_pong\\time.cpp",
+              "ToolTip": "C:\\Users\\arman\\source\\repos\\Ping_pong\\Ping_pong\\time.cpp",
+              "RelativeToolTip": "Ping_pong\\time.cpp",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAAACEAAAALAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2025-06-14T08:08:03.215Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "ball.h",
+              "DocumentMoniker": "C:\\Users\\arman\\source\\repos\\Ping_pong\\Ping_pong\\ball.h",
+              "RelativeDocumentMoniker": "Ping_pong\\ball.h",
+              "ToolTip": "C:\\Users\\arman\\source\\repos\\Ping_pong\\Ping_pong\\ball.h",
+              "RelativeToolTip": "Ping_pong\\ball.h",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAAA8AAAAVAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2025-06-07T14:39:01.17Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "time.h",
+              "DocumentMoniker": "C:\\Users\\arman\\source\\repos\\Ping_pong\\Ping_pong\\time.h",
+              "RelativeDocumentMoniker": "Ping_pong\\time.h",
+              "ToolTip": "C:\\Users\\arman\\source\\repos\\Ping_pong\\Ping_pong\\time.h",
+              "RelativeToolTip": "Ping_pong\\time.h",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAA4AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2025-06-14T08:08:11.635Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "ball.cpp",
+              "DocumentMoniker": "C:\\Users\\arman\\source\\repos\\Ping_pong\\Ping_pong\\ball.cpp",
+              "RelativeDocumentMoniker": "Ping_pong\\ball.cpp",
+              "ToolTip": "C:\\Users\\arman\\source\\repos\\Ping_pong\\Ping_pong\\ball.cpp",
+              "RelativeToolTip": "Ping_pong\\ball.cpp",
+              "ViewState": "AgIAAB4AAAAAAAAAAAAAAD0AAAAkAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2025-06-07T14:38:53.467Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "main.cpp",
+              "DocumentMoniker": "C:\\Users\\arman\\source\\repos\\Ping_pong\\Ping_pong\\main.cpp",
+              "RelativeDocumentMoniker": "Ping_pong\\main.cpp",
+              "ToolTip": "C:\\Users\\arman\\source\\repos\\Ping_pong\\Ping_pong\\main.cpp*",
+              "RelativeToolTip": "Ping_pong\\main.cpp*",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2025-06-07T07:58:57.419Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "headers_package.h",
+              "DocumentMoniker": "C:\\Users\\arman\\source\\repos\\Ping_pong\\Ping_pong\\headers_package.h",
+              "RelativeDocumentMoniker": "Ping_pong\\headers_package.h",
+              "ToolTip": "C:\\Users\\arman\\source\\repos\\Ping_pong\\Ping_pong\\headers_package.h",
+              "RelativeToolTip": "Ping_pong\\headers_package.h",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAARAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2025-06-07T08:12:30.014Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "map.h",
+              "DocumentMoniker": "C:\\Users\\arman\\source\\repos\\Ping_pong\\Ping_pong\\map.h",
+              "RelativeDocumentMoniker": "Ping_pong\\map.h",
+              "ToolTip": "C:\\Users\\arman\\source\\repos\\Ping_pong\\Ping_pong\\map.h",
+              "RelativeToolTip": "Ping_pong\\map.h",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABwAAAAgAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2025-06-07T07:51:50.161Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "map.cpp",
+              "DocumentMoniker": "C:\\Users\\arman\\source\\repos\\Ping_pong\\Ping_pong\\map.cpp",
+              "RelativeDocumentMoniker": "Ping_pong\\map.cpp",
+              "ToolTip": "C:\\Users\\arman\\source\\repos\\Ping_pong\\Ping_pong\\map.cpp",
+              "RelativeToolTip": "Ping_pong\\map.cpp",
+              "ViewState": "AgIAACQAAAAAAAAAAAAAADUAAABMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2025-06-07T07:27:27.767Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "platforms.cpp",
+              "DocumentMoniker": "C:\\Users\\arman\\source\\repos\\Ping_pong\\Ping_pong\\platforms.cpp",
+              "RelativeDocumentMoniker": "Ping_pong\\platforms.cpp",
+              "ToolTip": "C:\\Users\\arman\\source\\repos\\Ping_pong\\Ping_pong\\platforms.cpp",
+              "RelativeToolTip": "Ping_pong\\platforms.cpp",
+              "ViewState": "AgIAABsAAAAAAAAAAAAAAA0AAAAdAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2025-06-07T08:14:05.124Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "platforms.h",
+              "DocumentMoniker": "C:\\Users\\arman\\source\\repos\\Ping_pong\\Ping_pong\\platforms.h",
+              "RelativeDocumentMoniker": "Ping_pong\\platforms.h",
+              "ToolTip": "C:\\Users\\arman\\source\\repos\\Ping_pong\\Ping_pong\\platforms.h",
+              "RelativeToolTip": "Ping_pong\\platforms.h",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAQAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2025-06-07T08:14:46.121Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

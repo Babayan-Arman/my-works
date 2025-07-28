@@ -1,4 +1,0 @@
-﻿  Merge_sort.cpp
-C:\Users\arman\source\repos\Merge Sort\Merge Sort\Merge_sort.cpp(15,9): warning C4101: 'j': unreferenced local variable
-C:\Users\arman\source\repos\Merge Sort\Merge Sort\Merge_sort.cpp(15,6): warning C4101: 'i': unreferenced local variable
-  Merge Sort.vcxproj -> C:\Users\arman\source\repos\Merge Sort\Debug\Merge Sort.exe
